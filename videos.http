@@ -1,0 +1,26 @@
+@api = http://localhost:3000
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/6121bc012dc59918e0e14a4e
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=lWMemPN9t6Q",
+    "title": "fast video",
+    "description": "this is a fast video"
+}
+###
+DELETE {{api}}/videos/6121ba71208fd907c0045181
+
+###
+PUT {{api}}/videos/6121bc012dc59918e0e14a4e
+Content-Type: application/json
+
+{
+    "title": "new",
+    "description": "uwu"
+}
